@@ -21,15 +21,13 @@ This project leverages Anaconda and JupyterLab with Python 3.9:
 Need to import the following libraries and dependencies:
 
 ```
-import numpy as np
+import streamlit as st
+from dataclasses import dataclass
+from typing import Any, List
+import datetime as datetime
 import pandas as pd
-from pathlib import Path
-from sklearn.metrics import balanced_accuracy_score
-from sklearn.metrics import confusion_matrix
-from imblearn.metrics import classification_report_imbalanced
+import hashlib
 
-import warnings
-warnings.filterwarnings('ignore')
 ```
 
 ---
@@ -52,16 +50,12 @@ Open a terminal window, and then activate your ```dev``` virtual environment by 
 ```
 conda activate dev 
 ```
-Install imbalance-learn by running the following command:
+Install Streamlit by running the following command:
 
 ```
-conda install -c conda-forge imbalanced-learn 
+pip install streamlit
 ```
-Install PyDotPlus by running the following command:
 
-```
-conda install -c conda-forge pydotplus
-```
 ---
 
 ## Usage
@@ -69,33 +63,29 @@ conda install -c conda-forge pydotplus
 You will need to clone the repo so that you can run the application:
 
 ```
- https://github.com/locthai2002/Credit-Risk-Resampling.git
+https://github.com/locthai2002/PyChain-Ledger.git
 
 ```
 
 Here are some screenshots from running the application:
 
-## Import the Data
+## Create a new data class named ```Record```
 
-![Import the Data](images/1.png)
+![Create a new data class named ```Record```](images/1.png)
 
-## Split the Data into Training and Testing Sets
+## Change the existing ```Block``` data class
 
-![Split the Data into Training and Testing Sets](images/2.png)
-![Split the Data into Training and Testing Sets](images/3.png)
+![Change the existing ```Block``` data class](images/2.png)
 
-## Create a Logistic Regression Model with the Original Data
+## Create additional user input areas in the Streamlit application
 
-![Create a Logistic Regression Model with the Original Data](images/4.png)
-![Create a Logistic Regression Model with the Original Data](images/5.png)
+![Create additional user input areas in the Streamlit application](images/3.png)
 
-## Predict a Logistic Regression Model with Resampled Training Data
+## Test your complete ```PyChain``` ledger
 
-![Predict a Logistic Regression Model with Resampled Training Data](images/6.png)
+![Test your complete ```PyChain``` ledger](images/4.png)
+![Test your complete ```PyChain``` ledger](images/5.png)
 
-## Write a Credit Risk Analysis Report
-
-![Write a Credit Risk Analysis Report](images/7.png)
 
 
 ---
