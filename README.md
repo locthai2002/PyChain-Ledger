@@ -85,6 +85,7 @@ Here are some screenshots from running the application:
 
 ![Test your complete ```PyChain``` ledger](images/4.png)
 ![Test your complete ```PyChain``` ledger](images/5.png)
+![Test your complete ```PyChain``` ledger](images/6.png)
 
 
 
